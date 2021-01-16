@@ -1,0 +1,166 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --color-background--container: #ffffff;
+  --color-focus: #2196f3;
+  --font-family: Raleway;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/*nav*/
+.header-nav {
+  background: var(--color-background--container);
+  color: var (--title-text-color);
+}
+.logo-link {
+  font-family: var(--font-family);
+  font-weight: bold; /* Жирное начертание */
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--color-focus);
+}
+
+.studio {
+  font-family: var(--font-family);
+  font-weight: bold; /* Жирное начертание */
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.link-main {
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+.link-main:hover,
+.link-main:focus {
+  color: var(--color-focus);
+}
+.link-main:active {
+  color: tomato;
+}
+
+.nav-ul {
+  font-weight: 500; /* Жирное начертание */
+  font-size: 14px;
+  line-height: 1.19;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+.contakty a {
+  list-style-type: none;
+  color: var(--primary-text-color);
+}
+.header-li {
+  list-style-type: none;
+  font-style: normal;
+}
+
+/* main */
+.main-li {
+  list-style-type: none;
+  font-style: normal;
+}
+.container-button {
+  background: #2f303a;
+}
+.container-button h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-background--container);
+}
+/*button*/
+button.button-main {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--color-background--container);
+  background: var(--color-focus);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer; /* cursor */
+}
+.text-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.text-p {
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.container-footer {
+  background: #2f303a;
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 2097px;
+}
+.studio-footer .text-p {
+  color: var(--color-background--container);
+}
+
+.logo-link-footer {
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+.container-footer span {
+  color: var(--color-background--container);
+}
+.footer-address a {
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-li {
+  list-style-type: none;
+  font-style: normal;
+}
+/*portfolio*/
+
+.text-p a {
+  color: var(--primary-text-color);
+}
+button.filtry {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: var(--color-background--container);
+  border-radius: 4px;
+  color: #212121;
+  cursor: pointer; /* cursor */
+}
+button.filtry:hover button.filtry:focus {
+  background: var(--color-focus);
+  color: var(--color-background--container);
+}
+/* Скрытый заголовок */
+.visually-hidden {
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+}
