@@ -3,6 +3,8 @@
   --title-text-color: #212121;
   --color-background--container: #ffffff;
   --color-focus: #2196f3;
+  --akcent-color: #2196f3;
+  --akcent-background: #ffffff;
   --font-family: Raleway;
 }
 
@@ -37,7 +39,8 @@ body {
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
 }
 .link-main:hover,
-.link-main:focus {
+.link-main:focus,
+.link-main:target {
   color: var(--color-focus);
 }
 .link-main:active {
@@ -51,8 +54,15 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
-.contakty a {
+.list .current {
+  color: var(--akcent-color);
+}
+.header-li a {
   list-style-type: none;
+  background: var(--color-background--container);
+  color: var(--title-text-color);
+}
+.contakty a {
   color: var(--primary-text-color);
 }
 .header-li {
@@ -64,6 +74,9 @@ body {
 .main-li {
   list-style-type: none;
   font-style: normal;
+}
+.main-li .caption {
+  text-transform: uppercase;
 }
 .container-button {
   background: #2f303a;
@@ -94,8 +107,6 @@ button.button-main {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--title-text-color);
 }
 .text-p {
@@ -103,6 +114,9 @@ button.button-main {
   line-height: 1.71px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.aside {
+  background: #f5f4fa;
 }
 .container-footer {
   background: #2f303a;
@@ -142,6 +156,9 @@ button.button-main {
 .text-p a {
   color: var(--primary-text-color);
 }
+.subtitle{
+  font-size: 18px;
+}
 button.filtry {
   font-family: inherit;
   font-weight: 500;
@@ -154,13 +171,17 @@ button.filtry {
   color: #212121;
   cursor: pointer; /* cursor */
 }
-button.filtry:hover button.filtry:focus {
+button.filtry:hover,
+button.filtry:focus,
+button.filtry:target {
   background: var(--color-focus);
   color: var(--color-background--container);
 }
+button.current {
+  background: var(--akcent-color);
+  color: var(--akcent-background);
+}
 /* Скрытый заголовок */
 .visually-hidden {
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  overflow: hidden;
+  visibility: hidden;
 }
