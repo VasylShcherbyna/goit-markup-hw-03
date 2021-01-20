@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -15,8 +23,17 @@ body {
 }
 /*nav*/
 .header-nav {
-  background: var(--color-background--container);
   color: var (--title-text-color);
+}
+.box-nav {
+  display: flex;
+  align-items: center; /*Вирівнювання контейнерів по центру*/
+  position: absolute;
+  width: 1600px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  background: var(--color-background--container);
 }
 .logo-link {
   font-family: var(--font-family);
@@ -25,6 +42,13 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--color-focus);
+}
+.box-nav .logo-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-left: 215px;
+  margin-right: 93px;
 }
 
 .studio {
@@ -57,6 +81,32 @@ body {
 .list .current {
   color: var(--akcent-color);
 }
+.list {
+  display: flex;
+}
+.list .item {
+  background: tomato;
+}
+.list .item:not(:last-child) {
+  margin-right: 50px;
+}
+.list .link-main {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.list-contakty {
+  display: flex;
+  margin-left: 331px;
+}
+.list-contakty .link-main {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.list-contakty .contakty + .contakty {
+  margin-left: 50px;
+}
 .header-li a {
   list-style-type: none;
   background: var(--color-background--container);
@@ -68,6 +118,9 @@ body {
 .header-li {
   list-style-type: none;
   font-style: normal;
+}
+.header-nav {
+  display: flex;
 }
 
 /* main */
@@ -156,7 +209,7 @@ button.button-main {
 .text-p a {
   color: var(--primary-text-color);
 }
-.subtitle{
+.subtitle {
   font-size: 18px;
 }
 button.filtry {
