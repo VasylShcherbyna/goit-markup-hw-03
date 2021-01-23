@@ -1,11 +1,6 @@
 html {
   box-sizing: border-box;
 }
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -16,23 +11,44 @@ html {
   --font-family: Raleway;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 /*nav*/
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 .header-nav {
   color: var (--title-text-color);
 }
 .box-nav {
   display: flex;
   align-items: center; /*Вирівнювання контейнерів по центру*/
-  position: absolute;
-  width: 1600px;
-  height: 80px;
-  left: 0px;
-  top: 0px;
   background: var(--color-background--container);
 }
 .logo-link {
@@ -47,7 +63,6 @@ body {
   display: block;
   padding-top: 24px;
   padding-bottom: 25px;
-  margin-left: 215px;
   margin-right: 93px;
 }
 
@@ -83,9 +98,7 @@ body {
 }
 .list {
   display: flex;
-}
-.list .item {
-  background: tomato;
+  margin-right: 331px;
 }
 .list .item:not(:last-child) {
   margin-right: 50px;
@@ -97,15 +110,14 @@ body {
 }
 .list-contakty {
   display: flex;
-  margin-left: 331px;
 }
 .list-contakty .link-main {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.list-contakty .contakty + .contakty {
-  margin-left: 50px;
+.container-mail {
+  margin-right: 50px;
 }
 .header-li a {
   list-style-type: none;
@@ -128,14 +140,22 @@ body {
   list-style-type: none;
   font-style: normal;
 }
+
 .main-li .caption {
   text-transform: uppercase;
 }
 .container-button {
   background: #2f303a;
 }
+.container-button .container {
+  padding-bottom: 280px;
+  padding-top: 200px;
+}
 .container-button h1 {
-  font-weight: 900;
+  width: 696px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  display: block;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
@@ -144,7 +164,14 @@ body {
   color: var(--color-background--container);
 }
 /*button*/
+.box-button {
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+}
 button.button-main {
+  width: 200px;
+  height: 50px;
   font-family: inherit;
   font-weight: bold;
   font-size: 16px;
@@ -156,6 +183,18 @@ button.button-main {
   border-radius: 4px;
   cursor: pointer; /* cursor */
 }
+.list-desc {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.list-desc .main-li:not(:last-child) {
+  margin-right: 30px;
+}
+.main-li .caption {
+  padding-bottom: 10px;
+  width: 270px;
+}
 .text-title {
   font-weight: bold;
   font-size: 14px;
@@ -163,25 +202,85 @@ button.button-main {
   color: var(--title-text-color);
 }
 .text-p {
+  display: block;
+  width: 270px;
   font-size: 14px;
-  line-height: 1.71px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+.title-box {
+  height: 400px;
+}
+.title-post {
+  width: 376px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.box-img {
+  display: flex;
+  padding-bottom: 94px;
+}
+.box-img li:not(:last-child) {
+  padding-right: 30px;
 }
 .aside {
   background: #f5f4fa;
 }
+.aside h2 {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  width: 264px;
+  margin: 0 auto;
+}
+.container-item {
+  display: flex;
+  padding-bottom: 94px;
+}
+.container-item .main-li {
+  background: #ffffff;
+  /* material shadow v1 */
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.container-item .main-li:not(:last-child) {
+  margin-right: 30px;
+}
+.col .pic {
+  padding-bottom: 30px;
+}
+.col .text-title {
+  padding-bottom: 10px;
+  margin: 0 auto;
+  width: 151px;
+}
+.col .text-p {
+  padding-bottom: 30px;
+  width: 130px;
+  margin: 0 auto;
+}
+/*footer*/
+.logo {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
 .container-footer {
   background: #2f303a;
-  width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 2097px;
+}
+.footer-list .text-p {
+  padding-bottom: 9px;
+}
+.footer-list .link-m {
+  padding-bottom: 9px;
+}
+.footer-list .link-t {
+  padding-bottom: 60px;
 }
 .studio-footer .text-p {
   color: var(--color-background--container);
 }
-
 .logo-link-footer {
   font-family: var(--font-family);
   font-weight: bold;
@@ -194,6 +293,7 @@ button.button-main {
   color: var(--color-background--container);
 }
 .footer-address a {
+  display: block;
   font-size: 14px;
   line-height: 1.71;
   /* or 171% */
