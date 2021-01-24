@@ -322,7 +322,7 @@ button.button-main {
 
 .list-portfolio .main-li {
   align-items: flex-start;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   width: 370px;
   background: #ffffff;
   border: 1px solid #eeeeee;
