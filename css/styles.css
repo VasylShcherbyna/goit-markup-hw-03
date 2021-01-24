@@ -351,7 +351,26 @@ button.button-main {
 .subtitle {
   font-size: 18px;
 }
+button.btn {
+  min-width: 73px;
+}
+button.button-web {
+  min-width: 128px;
+}
+button.button-aplication {
+  min-width: 145px;
+}
+button.button-dyzajn {
+  min-width: 103px;
+}
+button.button-marketing {
+  min-width: 130px;
+}
 button.filtry {
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
