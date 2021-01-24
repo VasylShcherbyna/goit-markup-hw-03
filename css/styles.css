@@ -337,11 +337,13 @@ button.button-main {
 }
 .list-portfolio .subtitle {
   padding-bottom: 4px;
+  padding-left: 24px;
   width: 322px;
   margin: 0 auto;
 }
 .list-portfolio .text-p {
   padding-bottom: 20px;
+  padding-left: 24px;
   width: 322px;
   height: 30px;
   margin: 0 auto;
