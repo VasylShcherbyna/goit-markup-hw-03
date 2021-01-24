@@ -216,6 +216,7 @@ button.button-main {
   width: 376px;
   margin: 0 auto;
   padding-bottom: 50px;
+  text-align: center;
 }
 .box-img {
   display: flex;
@@ -254,12 +255,15 @@ button.button-main {
 .col .text-title {
   padding-bottom: 10px;
   margin: 0 auto;
-  width: 151px;
+  text-align: center;
 }
 .col .text-p {
   padding-bottom: 30px;
-  width: 130px;
   margin: 0 auto;
+  text-align: center;
+}
+.col .name-title {
+  text-align: center;
 }
 /*footer*/
 .logo {
