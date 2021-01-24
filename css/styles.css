@@ -305,7 +305,46 @@ button.button-main {
   font-style: normal;
 }
 /*portfolio*/
+.items-button {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.items-button .main-li:not(:last-child) {
+  margin-right: 8px;
+}
+.list-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 94px;
+}
 
+.list-portfolio .main-li {
+  align-items: flex-start;
+  padding-bottom: 30px;
+  width: 370px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+.list-portfolio img {
+  padding-bottom: 20px;
+}
+.list-portfolio .subtitle {
+  padding-bottom: 4px;
+  width: 322px;
+  margin: 0 auto;
+}
+.list-portfolio .text-p {
+  padding-bottom: 20px;
+  width: 322px;
+  height: 30px;
+  margin: 0 auto;
+}
+.list-portfolio .main-li:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
 .text-p a {
   color: var(--primary-text-color);
 }
