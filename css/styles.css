@@ -237,6 +237,7 @@ body {
   padding-bottom: 50px;
   width: 264px;
   margin: 0 auto;
+  text-align: center;
 }
 .container-item {
   display: flex;
