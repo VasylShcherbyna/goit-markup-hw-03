@@ -390,7 +390,6 @@ button.filtry {
   text-align: center;
   letter-spacing: 0.03em;
   background: var(--color-background--container);
-  border-radius: 4px;
   color: #212121;
   cursor: pointer; /* cursor */
 }
